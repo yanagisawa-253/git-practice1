@@ -30,13 +30,26 @@ header .heading {
 .main-visual {
   width: 100%;
   height: 300px;
-
+  background-image: url(img/mv.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .main-visual-content {
-  width: 350px;
+  width: 40%;
   height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  padding-top: 105px;
+}
 
+.main-visual-text {
+  color: #fff;
+}
+
+.main-visual-name {
+  margin-top: 30px;
+  color: #fff;
 }
 
 .main {
@@ -69,3 +82,25 @@ footer {
 .footer-text {
   color: #fff;
 }
+
+  /* 元画像のサイズを維持したまま、自動的に表示される 初期値 
+  background-size: auto;
+
+  /* 画像の縦横比を維持したまま、領域全体を埋め尽くすまで伸縮される（画像全体が表示される） 
+  background-size: contain;
+
+  /* 画像の縦横比を維持したまま、領域全体をおおうサイズで伸縮される（画像の表示されない部分も発生） 
+  background-size: cover;
+
+  /* 表示領域の幅100％ 高さ100％で表示（縦横比は無視） 
+  background-size: 100% 100%;
+
+  /* pxを指定して表示 
+  background-size: 24px auto; */
+
+
+  /* 上揃え、左右を中央に配置 
+  background-position: top center;
+  
+  /* 左から50px、上から100pxの位置に配置 
+  background-position: 50px 100px; */
